@@ -1,10 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import HomePage from "./components/home-page/HomePage";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
-  return <h1 class="text-3xl font-bold underline">Hello world!</h1>;
+  return(
+    <div className="h-screen w-screen relative">
+      <img src="/assets/HeroPage.png" alt="" className="absolute -z-10 top-0 object-cover h-full w-full" />
+      <Navbar/>
+      <HomePage/>
+    </div>
+  );
 }
 
 export default App
