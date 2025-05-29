@@ -1,14 +1,20 @@
-import HomePage from "./components/home-page/HomePage";
-import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home";
+import Silder from "./pages/Silder";
 
 function App() {
-  return(
-    <div className="h-screen w-screen relative">
-      <img src="/assets/HeroPage.png" alt="" className="absolute -z-10 top-0 object-cover h-full w-full" />
-      <Navbar/>
-      <HomePage/>
+  return (
+    <div className="overflow-x-hidden">
+      {/* First section: full screen home page */}
+      <section className="w-screen h-screen">
+        <Home />
+      </section>
+
+      {/* Second section: horizontally scrollable gallery */}
+      <section className="w-screen h-screen overflow-hidden">
+        <Silder/>
+      </section>
     </div>
   );
 }
 
-export default App
+export default App;
