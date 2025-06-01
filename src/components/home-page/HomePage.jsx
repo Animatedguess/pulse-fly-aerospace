@@ -6,8 +6,8 @@ const HomePage = () => {
         <p className="text-sm sm:text-base tracking-[0.3em] font-semibold uppercase text-gray-200 mb-4">
           High-Fly Precision
         </p>
-        <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-md">
-          PULSEFLY TECH-GEAR<span className="text-green-300">®</span>
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-md">
+          PULSEFLY <br/>TECH-GEAR<span className="text-green-300">®</span>
         </h1>
       </div>
 
