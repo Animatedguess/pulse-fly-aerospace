@@ -12,13 +12,13 @@ const Navbar = () => {
       {/* main menu of navbar */}
       <div className="flex items-center mt-11 w-full justify-center space-x-8">
         {/* drone devices */}
-        <div>DRONE</div>
+        <div className="relative before:content-[''] before:bg-white before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">DRONE</div>
         {/* earpods devices */}
-        <div>EARPODS</div>
+        <div className="relative before:content-[''] before:bg-white before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">EARPODS</div>
         {/* news section */}
-        <div>NEWS</div>
+        <div className="relative before:content-[''] before:bg-white before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">NEWS</div>
         {/* vision section */}
-        <div>VISION</div>
+        <div className="relative before:content-[''] before:bg-white before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">VISION</div>
         {/* icons */}
         <div className="flex items-center gap-3">
           {/* shoping card */}
