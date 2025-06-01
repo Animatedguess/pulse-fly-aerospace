@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import PaginationBar from "../components/slider-componet/PaginationBar";
-import SliderHeader from "../components/slider-componet/SliderHeader";
-import MainSlider from "../components/slider-componet/MainSlider";
+import PaginationBar from "../slider-componet/PaginationBar";
+import SliderHeader from "../slider-componet/SliderHeader";
+import MainSlider from "../slider-componet/MainSlider";
 
 const Silder = () => {
   const sliderRef = useRef(null);

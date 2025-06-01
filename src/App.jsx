@@ -1,7 +1,8 @@
-import Gallery from "./pages/Gallery";
+import Gallery from "./components/home-page/Gallery";
 import Home from "./pages/Home";
-import Inspiration from "./pages/Inspiration";
-import Silder from "./pages/Silder";
+import Inspiration from "./components/home-page/Inspiration";
+import Silder from "./components/home-page/Silder";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
       <section className="w-screen h-screen overflow-hidden">
         <Inspiration/>
+      </section>
+
+      <section className="w-screen overflow-hidden">
+        <Footer/>
       </section>
     </div>
   );
