@@ -5,7 +5,7 @@ const MainSlider = ({ sliderRef }) => {
   return (
     <div
       ref={sliderRef}
-      className="flex-1 overflow-x-auto scrollbar-default scroll-smooth"
+      className="flex-1 overflow-x-auto scrollbar-default scroll-smooth h-6/7"
     >
       <div className="flex space-x-2 w-max h-full py-4">
         {[
@@ -20,7 +20,7 @@ const MainSlider = ({ sliderRef }) => {
             key={idx}
             className={`w-[33vw] h-full flex items-center justify-center text-white text-2xl font-bold`}
           >
-            <SlideItem title={item.title} price={item.price} image={"/assets/resized.png"} />
+            <SlideItem title={item.title} price={item.price} image={"/assets/chat.png"} />
           </div>
         ))}
       </div>

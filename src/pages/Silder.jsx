@@ -18,10 +18,10 @@ const Silder = () => {
     }
   };
   return (
-    <div className="w-screen h-screen">
-      <SliderHeader />
-      <div className="w-full h-6/7 flex overflow-x-auto overflow-y-hidden">
-        <PaginationBar onScrollLeft={scrollLeft} onScrollRight={scrollRight}/>
+    <div className="w-screen h-screen flex">
+      <PaginationBar onScrollLeft={scrollLeft} onScrollRight={scrollRight}/>
+      <div className="w-12/13 h-full flex flex-col overflow-x-auto overflow-y-hidden">
+        <SliderHeader />
         <MainSlider sliderRef={sliderRef}/>
       </div>
     </div>
