@@ -1,19 +1,32 @@
-import React from "react";
-import Navbar from "../components/navbar/Navbar";
-import HomePage from "../components/home-page/HomePage";
+import WelcomeHome from "../components/home-page/WelcomeHome";
+import Silder from "../components/home-page/Silder";
+import Gallery from "../components/home-page/Gallery";
+import Inspiration from "../components/home-page/Inspiration";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
    return (
-    <div className="relative w-screen h-screen overflow-x-hidden">
-      {/* Background Image */}
-      <img
-        src="/assets/HeroPage.png"
-        alt="PulseFly Hero"
-        className="absolute inset-0 -z-10 w-full h-full object-cover"
-      />
+    <div className="overflow-x-hidden">
+      
+      <section className="w-screen h-screen">
+        <WelcomeHome/>
+      </section>
 
-      <Navbar />
-      <HomePage />
+      <section className="w-screen h-screen overflow-hidden">
+        <Silder/>
+      </section>
+
+      <section className="w-screen h-[400vh] overflow-hidden">
+        <Gallery/>
+      </section>
+
+      <section className="w-screen h-screen overflow-hidden">
+        <Inspiration/>
+      </section>
+
+      <section className="w-screen overflow-hidden">
+        <Footer/>
+      </section>
     </div>
   );
 };

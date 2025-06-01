@@ -13,11 +13,13 @@ const HomePage = () => {
 
       {/* Bottom Nav Buttons */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-16 text-white font-inter">
-        <button className="text-xl sm:text-2xl font-medium px-6 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
-          EARPODS
+        <button className="relative text-lg md:text-2xl font-medium text-white px-5 py-2 group">
+          EARBUDS
+          <span className="absolute bottom-0 left-0 h-0.5 w-full bg-white transition-transform duration-300 transform group-hover:scale-x-0" />
         </button>
-        <button className="text-xl sm:text-2xl font-medium px-6 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+        <button className="relative text-lg md:text-2xl font-medium text-white px-5 py-2 group">
           DRONE
+          <span className="absolute bottom-0 left-0 h-0.5 w-full bg-white transition-transform duration-300 transform group-hover:scale-x-0" />
         </button>
       </div>
     </>
