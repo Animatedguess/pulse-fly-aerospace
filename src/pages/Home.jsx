@@ -23,10 +23,6 @@ const Home = () => {
       <section className="w-screen h-screen overflow-hidden">
         <Inspiration/>
       </section>
-
-      <section className="w-screen overflow-hidden">
-        <Footer/>
-      </section>
     </div>
   );
 };
