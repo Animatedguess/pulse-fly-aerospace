@@ -4,13 +4,15 @@ import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import Product from "./pages/Product.jsx";
+import DroneProduct from "./pages/DroneProduct.jsx";
+import EarbudsProduct from "./pages/EarbudsProduct.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route path="" element={<Home/>}/>
-      <Route path="product" element={<Product/>}/>
+      <Route path="drone-product" element={<DroneProduct/>}/>
+      <Route path="earbuds-product" element={<EarbudsProduct/>}/>
     </Route>
   )
 );

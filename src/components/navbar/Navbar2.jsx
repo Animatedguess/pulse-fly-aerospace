@@ -5,13 +5,13 @@ import "../../App.css";
 import HoverPanel from "./HoverPanel";
 import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar2 = () => {
   return (
-    <div className="relative text-gray-100 font-inter font-semibold leading-3 text-sm flex items-center justify-center w-full">
+    <div className="relative text-gray-800 bg-gray-100 font-inter font-semibold leading-3 text-sm flex items-center justify-center w-full">
       {/* Brand logo */}
       <Link to="/">
         <div className="absolute left-10 -top-2">
-          <BrandLogo className={"text-gray-100 fill-current size-32"} />
+          <BrandLogo className={"text-gray-800 fill-current size-32"} />
         </div>
       </Link>
       {/* main menu of navbar */}
@@ -21,7 +21,7 @@ const Navbar = () => {
           {({ isActive }) => (
             <>
               <p
-                className={`relative before:content-[''] before:absolute before:bg-gray-100 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
+                className={`relative before:content-[''] before:absolute before:bg-gray-800 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
                   isActive ? "before:scale-x-100" : "before:scale-x-0 group-hover:before:scale-x-100"
                 }`}
               >
@@ -38,7 +38,7 @@ const Navbar = () => {
           {({ isActive }) => (
             <>
               <p
-                className={`relative before:content-[''] before:absolute before:bg-gray-100 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
+                className={`relative before:content-[''] before:absolute before:bg-gray-800 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
                   isActive ? "before:scale-x-100" : "before:scale-x-0 group-hover:before:scale-x-100"
                 }`}
               >
@@ -54,7 +54,7 @@ const Navbar = () => {
           {({ isActive }) => (
             <>
               <p
-                className={`relative before:content-[''] before:absolute before:bg-gray-100 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
+                className={`relative before:content-[''] before:absolute before:bg-gray-800 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
                   isActive ? "before:scale-x-100" : "before:scale-x-0 group-hover:before:scale-x-100"
                 }`}
               >
@@ -69,7 +69,7 @@ const Navbar = () => {
         <NavLink to="vision" className="group">
           {({ isActive }) => (
             <>
-              <p className={`relative before:content-[''] before:absolute before:bg-gray-100 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
+              <p className={`relative before:content-[''] before:absolute before:bg-gray-800 before:left-0 before:-bottom-2 before:h-0.5 before:w-full before:transition-transform before:duration-300 ${
                   isActive ? "before:scale-x-100" : "before:scale-x-0 group-hover:before:scale-x-100"
                 }`}>
             VISION
@@ -82,20 +82,20 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           {/* shoping card */}
           <div>
-            <ShoppingCard className={"text-gray-100 fill-current size-5"} />
+            <ShoppingCard className={"text-gray-800 fill-current size-5"} />
           </div>
           {/* user profile */}
           <div>
-            <UserProfile className={"text-gray-100 fill-current size-5"} />
+            <UserProfile className={"text-gray-800 fill-current size-5"} />
           </div>
         </div>
       </div>
       {/* language changer */}
-      <div className="absolute right-10 top-9 bg-gray-100 rounded-full w-9 h-9 flex items-center justify-center">
-        <p className="text-gray-800 font-semibold text-sm">EG</p>
+      <div className="absolute right-10 top-9 bg-gray-800 rounded-full w-9 h-9 flex items-center justify-center">
+        <p className="text-gray-100 font-semibold text-sm">EG</p>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default Navbar2;

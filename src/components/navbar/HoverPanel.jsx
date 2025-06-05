@@ -1,38 +1,81 @@
-import React from "react";
 import BrandLogo from "../icons/BrandLogo";
 import ShoppingCard from "../icons/ShoppingCard";
 import UserProfile from "../icons/UserProfile";
+import { Link, NavLink } from "react-router-dom";
 
-const HoverPanel = ({image}) => {
+const HoverPanel = ({ image }) => {
   return (
     <div className="absolute top-0 left-0 w-full h-[90vh] bg-gray-50 transition-opacity duration-500 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible z-40">
       <div className="relative h-1/6">
         <div className="relative text-gray-100 font-inter font-semibold leading-3 text-sm flex items-center justify-center w-full">
           {/* Brand logo */}
-          <div className="absolute z-50 left-10 -top-2">
-            <BrandLogo className={"text-gray-800 fill-current size-32"} />
-          </div>
+          <Link to="/">
+            <div className="absolute z-50 left-10 -top-2">
+              <BrandLogo className={"text-gray-800 fill-current size-32"} />
+            </div>
+          </Link>
           {/* main menu of navbar */}
           <div className="flex items-center mt-11 w-full justify-center space-x-8">
             {/* drone devices */}
-            <div className="relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">
-              DRONE
-            </div>
+            <NavLink to="/drone-product" className="group">
+              {({ isActive }) => (
+                <div
+                  className={`relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 ${
+                    isActive
+                      ? "before:scale-x-100"
+                      : "before:scale-x-0 hover:before:scale-x-100"
+                  }`}
+                >
+                  DRONE
+                </div>
+              )}
+            </NavLink>
 
             {/* EARBUDS devices */}
-            <div className="relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">
-              EARBUDS
-            </div>
+            <NavLink to="earbuds-product" className="group">
+              {({ isActive }) => (
+                <div
+                  className={`relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 ${
+                    isActive
+                      ? "before:scale-x-100"
+                      : "before:scale-x-0 hover:before:scale-x-100"
+                  }`}
+                >
+                  EARBUDS
+                </div>
+              )}
+            </NavLink>
 
             {/* NEWS devices */}
-            <div className="relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">
-              NEWS
-            </div>
+            <NavLink to="news" className="group">
+              {({ isActive }) => (
+                <div
+                  className={`relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 ${
+                    isActive
+                      ? "before:scale-x-100"
+                      : "before:scale-x-0 hover:before:scale-x-100"
+                  }`}
+                >
+                  NEWS
+                </div>
+              )}
+            </NavLink>
 
             {/* VISION devices */}
-            <div className="relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100">
-              VISION
-            </div>
+            <NavLink to="vision" className="group">
+              {({ isActive }) => (
+                <div
+                  className={`relative z-50 text-gray-800 before:content-[''] before:bg-gray-800 before:h-0.5 before:w-full before:absolute before:left-0 before:-bottom-2 before:transform before:transition-transform before:duration-300 ${
+                    isActive
+                      ? "before:scale-x-100"
+                      : "before:scale-x-0 hover:before:scale-x-100"
+                  }`}
+                >
+                  VISION
+                </div>
+              )}
+            </NavLink>
+
             {/* icons */}
             <div className="flex items-center gap-3">
               {/* shoping card */}
