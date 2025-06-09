@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import PlusIcon from "../icons/footer-icons/PlusIcon";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const links = ["Frequently Asked Questions", "Help center", "Size guide"];
@@ -119,31 +120,31 @@ const Footer = () => {
       {/* bottom footer */}
       <div className="bg-[#1a1b19] text-white py-6">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-y-4 text-sm text-gray-300">
-          <a href="#" className="hover:underline">
+          <Link href="#" className="hover:underline">
             Contact us
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Ubac vision
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             10€ on your first order
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Manage cookies
-          </a>
+          </Link>
 
-          <a href="#" className="hover:underline">
+          <Link href="#" className="hover:underline">
             Terms and conditions of sale
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Legal information
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Privacy Policy
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link href="#" className="hover:underline">
             Site Map
-          </a>
+          </Link>
         </div>
       </div>
     </div>

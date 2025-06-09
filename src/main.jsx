@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from "./pages/Home.jsx";
 import DroneProduct from "./pages/DroneProduct.jsx";
 import EarbudsProduct from "./pages/EarbudsProduct.jsx";
+import Vision from "./pages/Vision.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Home/>}/>
       <Route path="drone-product" element={<DroneProduct/>}/>
       <Route path="earbuds-product" element={<EarbudsProduct/>}/>
+      <Route path="vision" element={<Vision/>}/>
     </Route>
   )
 );
