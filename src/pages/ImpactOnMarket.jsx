@@ -7,10 +7,6 @@ const impactData = [
     description: (
       <>
         Our drones are designed with sustainability in mind. For example, our flagship model has a carbon footprint of only <strong>6.1 kg CO₂e</strong>, which is 66% lower than the industry average (17 kg CO₂e), as validated by independent assessment.
-        <br />
-        <a href="/product/vortex-x2" className="text-blue-600 hover:underline mt-2 inline-block">
-          Learn more about Vortex-X2
-        </a>
       </>
     ),
   },
@@ -20,10 +16,6 @@ const impactData = [
     description: (
       <>
         All components of our drones are <strong>recyclable</strong> and partially reintegrated into production. Remaining parts are reused in other industries such as insulation or e-waste recycling.
-        <br />
-        <span className="block mt-2">
-          Contact us at <a href="mailto:recycle@yourcompany.com" className="text-blue-600 hover:underline">recycle@yourcompany.com</a> to return your end-of-life drones.
-        </span>
       </>
     ),
   },
@@ -42,18 +34,13 @@ const ImpactOnMarket = () => {
       {impactData.map(({ title, image, description }) => (
         <div
           key={title}
-          className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl w-full px-4"
+          className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-9xl w-full px-4"
         >
-          <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+          <div className="relative w-[38vmax] h-[38vmax] rounded-full overflow-hidden shadow-lg flex-shrink-0">
             <img src={image} alt={title} className="object-cover w-full h-full" />
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 space-y-4 px-6">
-              <div className="text-black text-2xl font-semibold">
-                + {title}
-              </div>
-            </div>
           </div>
 
-          <div className="text-left text-gray-600 text-lg max-w-lg">
+          <div className="text-gray-500 max-w-sm text-base font-normal font-inter leading-7">
             {description}
           </div>
         </div>

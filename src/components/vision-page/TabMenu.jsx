@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const tabs = [
-  "Manufacturing",
   "Actions",
   "Transparency",
   "Our certifications",
