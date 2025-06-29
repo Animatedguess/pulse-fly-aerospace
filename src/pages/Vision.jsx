@@ -1,3 +1,4 @@
+import Button from "../components/feedback/Button";
 import Certificate from "../components/vision-page/Certificate";
 import Introduction from "../components/vision-page/Introduction";
 import Review from "../components/vision-page/Review";
@@ -9,15 +10,16 @@ import ImpactOnMarket from "./ImpactOnMarket";
 const Vision = () => {
   return (
     <>
-        <VideoComponent/>
-        <div>
-            <TabMenu/>
-            <Introduction/>
-            <Transparency/>
-            <Certificate/>
-            <ImpactOnMarket/>
-            <Review/>
-        </div>
+      <VideoComponent />
+      <div className="relative">
+        <Button/>
+        <TabMenu />
+        <Introduction />
+        <Transparency />
+        <Certificate />
+        <ImpactOnMarket />
+        <Review />
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 const Review = () => {
   return (
-    <div id="review" className="snap-normal px-4 md:px-32 lg:px-48 py-24 bg-white">
+    <div id="review" className="snap-normal px-4 md:px-32 lg:px-48 py-24">
       <div className="flex flex-col items-center justify-center py-16 space-y-16 bg-gray-50/90 rounded-2xl shadow-md">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-inter tracking-tight">
           Why Choose Pulsefly?

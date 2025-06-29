@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import DroneProduct from "./pages/DroneProduct.jsx";
 import EarbudsProduct from "./pages/EarbudsProduct.jsx";
 import Vision from "./pages/Vision.jsx";
+import UserProfile from "./components/icons/UserProfile.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route path="drone-product" element={<DroneProduct/>}/>
       <Route path="earbuds-product" element={<EarbudsProduct/>}/>
       <Route path="vision" element={<Vision/>}/>
+      <Route path="userprofile" element={<UserProfile/>}/>
     </Route>
   )
 );
