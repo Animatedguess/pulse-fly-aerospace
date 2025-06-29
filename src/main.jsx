@@ -7,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import DroneProduct from "./pages/DroneProduct.jsx";
 import EarbudsProduct from "./pages/EarbudsProduct.jsx";
 import Vision from "./pages/Vision.jsx";
-import UserProfile from "./components/icons/UserProfile.jsx";
+import UserProfile from "./pages/UserProfile.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
