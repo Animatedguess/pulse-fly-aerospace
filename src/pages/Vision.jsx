@@ -5,14 +5,13 @@ import Review from "../components/vision-page/Review";
 import TabMenu from "../components/vision-page/TabMenu";
 import Transparency from "../components/vision-page/Transparency";
 import VideoComponent from "../components/vision-page/VideoComponent";
-import ImpactOnMarket from "./ImpactOnMarket";
+import ImpactOnMarket from "../components/vision-page/ImpactOnMarket";
 
 const Vision = () => {
   return (
     <>
       <VideoComponent />
       <div className="relative">
-        <Button/>
         <TabMenu />
         <Introduction />
         <Transparency />

@@ -89,11 +89,11 @@ const Button = () => {
       {/* Toggle Floating Button */}
       <div
         onClick={() => setClicked(!isClicked)}
-        className="fixed bottom-4 right-4 bg-[#212322] p-4 rounded-full border border-[#212322] cursor-pointer shadow-xl hover:bg-[#2c2f2d] transition duration-300 active:scale-105"
+        className="fixed bottom-4 right-4 z-50 bg-[#212322] p-4 rounded-full border border-[#212322] cursor-pointer shadow-xl hover:bg-[#2c2f2d] transition duration-300 active:scale-105"
       >
         <Message
           isClicked={isClicked}
-          className={`size-6 text-white transition-transform duration-300 ${
+          className={`size-8 text-white rotate-y-180 transition-transform duration-300 ${
             isClicked ? "rotate-45" : "rotate-0"
           }`}
         />

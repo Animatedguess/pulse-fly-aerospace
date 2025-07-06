@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PlusIcon from "../components/icons/footer-icons/PlusIcon";
+import PlusIcon from "../icons/footer-icons/PlusIcon";
 
 const impactData = [
   {
